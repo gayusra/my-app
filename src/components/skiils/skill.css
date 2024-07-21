@@ -1,0 +1,228 @@
+.skill{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 200px 170px;
+    gap: 30px;
+    
+    
+}
+.skill_title{
+    position: relative;
+}
+.skill_title img{
+    position: absolute;
+    top:0;
+    right:0;
+    z-index: -1;
+}
+.skill_title h1{
+    padding: 0 30px;
+    font-size: 60px;
+    font-weight: 600;
+}
+.skill_format{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:10px;
+    border-radius: 10px;
+    border: 2px solid white;
+    padding: 30px;
+    height: 350px;
+    width: 400px;
+    
+}
+
+/*.skill_caption{
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 10px;
+    background: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color:var(--text-color);
+    cursor: pointer;
+    opacity: 0;
+    padding-top: 80%;
+    transition: all 0.8s;
+}
+.skill_caption img{
+    width: 60px;
+    margin-bottom: 10px;
+    cursor: pointer;
+
+}*/
+
+.skill_format h1{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 800;
+    background: linear-gradient(260deg,#DF8908 50%,#B415ff 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.skill_format p{
+    
+    margin-left: 5px;
+    line-height: 20px;
+    
+}
+.skill_container{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap:50px;
+    margin-bottom: 10px;
+}
+.skill_format:hover{
+    border: 2px solid #ff00ff;
+    background-image: linear-gradient(45deg,#3f0028,#582300);
+    transform: scale(1.07);
+    transition: 0.4s;
+}
+
+.skill_link {
+    display: block;
+    text-align: center;
+    
+    color:white;
+    text-decoration: none;
+  }
+  .skill_para{
+    background: linear-gradient(280deg,#DF8908 100%,#B415ff 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  /*media queries*/
+
+  /*@media screen and (max-width:992px) {
+    .skill_format{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap:10px;
+        border-radius: 10px;
+        border: 2px solid white;
+        padding: 20px;
+        height: 450px;
+        width: 400px;
+        
+    }
+
+    .skill_format p{
+        margin-left: 5px;
+        line-height: 25px;
+        font-size: 18px;
+        
+    }
+      
+    
+  }*/
+  @media screen and (max-width:768px) {
+    .skill_title h1{
+        padding: 0 30px;
+        font-size: 50px;
+        font-weight: 600;
+    }
+    .skill_title img{
+        position: absolute;
+        top:0;
+        right:0;
+        z-index: -1;
+        width: 170px;
+    }
+    .skill_container{
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        gap:30px;
+        margin-bottom: 10px;
+    }
+    .skill_format{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap:10px;
+        border-radius: 10px;
+        border: 2px solid white;
+        padding: 20px;
+        height: 400px;
+        width: 320px;
+        
+    }
+    .skill_format h1{
+        text-align: center;
+        font-size: 20px;
+        font-weight: 600;
+        background: linear-gradient(260deg,#DF8908 50%,#B415ff 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .skill_format p{
+        margin-left: 5px;
+        line-height: 25px;
+        
+    }
+     
+    
+  }
+
+  @media (min-width:321px) and (max-width:375px){
+    .skill_title h1{
+        
+        padding: 10px 40px;
+        font-size: 30px;
+        font-weight: 500;
+    }
+    .skill_title img{
+        position: absolute;
+        top:0;
+        right:0;
+        bottom: 10px;
+        z-index: -1;
+        width: 150px;
+    }
+    .skill_container{
+        display: flex;
+       flex-direction: column;
+        gap:50px;
+        margin-bottom: 10px;
+        margin-left: 100px;
+    }
+    .skill_format{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap:10px;
+        border-radius: 10px;
+        border: 2px solid white;
+        padding: 20px;
+        height: 450px;
+        width: 350px;
+        
+    }
+    .skill_format h1{
+        text-align: center;
+        font-size: 30px;
+        font-weight: 600;
+        background: linear-gradient(260deg,#DF8908 50%,#B415ff 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .skill_format p{
+        margin-left: 5px;
+        line-height: 25px;
+        font-size: 18px;
+        
+    }
+}

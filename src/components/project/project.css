@@ -1,0 +1,145 @@
+/*.projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 200px 170px;
+    gap:50px;
+    width: 900px;
+}
+.project_title{
+    position: relative;
+}
+.project_title img{
+    position: absolute;
+    bottom:0;
+    right:0;
+    z-index: -1;
+}
+.project_title h1{
+    padding: 0 30px;
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.item img{
+    width: 70px;
+}
+.items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+.item{
+    width: calc(33.33%);
+}*/
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+
+}
+.project_title{
+    position: relative;
+    margin-bottom: 20px;
+}
+.project_img{
+    position: absolute;
+    top:0;
+    right: 0;
+    z-index: -1;
+}
+.project_title h1{
+    padding: 0 30px;
+    font-size: 60px;
+    font-weight: 600;
+}
+  
+.skills .items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* width: 800px; */
+    margin: auto;
+    /* background-color: yellow; */
+  }
+  
+ .skills .items .item {
+    width: calc(30.33%);
+    background-color: black;
+    margin: 20px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid white;
+    box-shadow: 
+    5px 8px 10px 3px rgba(223, 137, 8, 0.5),  /* Orange shadow */
+    5px 3px 10px 5px rgba(180, 21, 255, 0.5);
+
+
+  }
+.item:hover{
+    border: 2px solid #ff00ff;
+    background-image: linear-gradient(45deg,#3f0028,#582300);
+    transform: scale(1.07);
+    transition: 0.4s;
+  }
+  
+ .skills .items .item img {
+    width: 70px;
+    height: 100px;
+    
+  }
+
+
+/*media queries*/
+
+@media (min-width:321px) and (max-width:375px) {
+    .project_title h1{
+        padding:  10px 30px;
+        font-size: 30px;
+        font-weight: 600;
+        margin-left: 60px;
+    }
+    .project_title{
+        position: relative;
+    }
+    .project_img{
+        position: absolute;
+        top:0;
+        right: 0;
+        width: 150px;
+        z-index: -1;
+    }
+
+    .skills .items {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 470px;
+        
+       /* background-color: yellow; */
+    }
+      .skills .items .item {
+        width: calc(33.33%);
+        background-color: black;
+        margin: 20px;
+        text-align: center;
+        padding: 10px;
+        border-radius: 10px;
+        border: 1px solid white;
+        box-shadow: 
+        5px 8px 10px 3px rgba(223, 137, 8, 0.5),  /* Orange shadow */
+        5px 3px 10px 5px rgba(180, 21, 255, 0.5);
+    
+    
+      }
+
+    
+}
